@@ -1,0 +1,33 @@
+#carousel {
+  width: 80%;
+  margin: 0 auto;
+  overflow:inherit;
+  position: relative;
+}
+
+#carousel ul {
+  list-style:circle;
+  padding: 0;
+  margin: 0;
+  width: 400%;
+  animation: slide 20s infinite;
+  height: none;
+}
+
+#carousel ul li {
+  width: 25%;
+  float: left;
+}
+
+#carousel ul li img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
